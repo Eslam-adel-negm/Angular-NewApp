@@ -1,0 +1,14 @@
+<div class="content-wrapper" dir="rtl">
+  <div class="news-card" *ngFor="let item of items">
+    <a [href]="item.url" target="_blank" class="news-card__card-link"></a>
+    <img [src]="item.urlToImage" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h2 class="news-card__title">{{item.title}}</h2>
+      <div class="news-card__post-date">{{item.publishedAt | date :'short'}}</div>
+      <div class="news-card__details-wrapper">
+        <p class="news-card__excerpt">{{item.description}}&hellip;</p>
+        <a [href]="item.url" target="_blank" class="news-card__read-more"> قرائه المزيد </a>
+      </div>
+    </div>
+  </div>
+</div>

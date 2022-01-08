@@ -7,13 +7,17 @@ import { EgyComponent } from './egy/egy.component';
 import { UsaComponent } from './usa/usa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
+import { DetailsEnComponent } from './details-en/details-en.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EgyComponent,
     UsaComponent,
-    NavbarComponent
+    NavbarComponent,
+    DetailsComponent,
+    DetailsEnComponent
   ],
   imports: [
     BrowserModule,

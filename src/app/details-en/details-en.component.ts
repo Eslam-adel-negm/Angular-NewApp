@@ -10,13 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsEnComponent implements OnInit {
 
   idEn:any;
-  oneNewEn:any = [];
+  oneNewsEn:any = [];
   constructor(public _ActivatedRoute:ActivatedRoute,public _NewsService:NewsService) {
     this.idEn = this._ActivatedRoute.snapshot.paramMap.get('id');
     // console.log(this.idEn)
     this._NewsService.getUsaNews().subscribe( (data) => {
-      this.oneNewEn = data.articles[this.idEn];
-      // console.log(this.oneNewEn)
+      this.oneNewsEn = data.articles[this.idEn];
+      // console.log(this.oneNewsEn)
     });
   }
 

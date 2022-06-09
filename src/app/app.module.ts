@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
 import { DetailsEnComponent } from './details-en/details-en.component';
+import { NewsPageComponent } from './news-page/news-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DetailsEnComponent } from './details-en/details-en.component';
     UsaComponent,
     NavbarComponent,
     DetailsComponent,
-    DetailsEnComponent
+    DetailsEnComponent,
+    NewsPageComponent
   ],
   imports: [
     BrowserModule,
